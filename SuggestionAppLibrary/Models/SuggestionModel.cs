@@ -9,7 +9,7 @@ public class SuggestionModel
    public string Description { get; set; }
    public DateTime DateCreated { get; set; } = DateTime.UtcNow;
    public CategoryModel Category { get; set; }
-   public string Author { get; set; } // <- need change
+   public BasicUserModel Author { get; set; } // <- need change
    public HashSet<string> UserVotes { get; set; } = new(); // unique value stirng
    public StatusModel SuggestionStatus { get; set; } // watched, completed, upComming
    public string OwnerNotes { get; set; }
