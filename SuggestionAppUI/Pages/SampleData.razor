@@ -28,6 +28,9 @@ else
 
 
 @code {
+    /// <summary>
+    /// Does not have porper vote?? Todo: Lesson 14
+    /// </summary>
     private bool categoriesCreated = false;
     private bool statusesCreated = false;
 
@@ -47,6 +50,7 @@ else
         var categories = await categoryData.GetAllCategories();
         var statuses = await statusData.GetAllStatuses();
 
+        /// should be identifier for persion Id
         HashSet<string> votes = new();
         votes.Add("1");
         votes.Add("2");
